@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="QuestionView" customModule="HQTriviaDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="507"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В какую валюту стоило вкладывать все свои деньги в 2017 году" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTn-79-Rsn">
+                    <rect key="frame" x="28" y="142" width="269" height="87"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-sM-jwa" customClass="AnswerButton" customModule="HQTriviaDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="269" width="265" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bvo-g2-Xkd"/>
+                    </constraints>
+                    <state key="normal" title="Рубль">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbi-l0-js4" customClass="AnswerButton" customModule="HQTriviaDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="343" width="265" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5tR-Kn-hci"/>
+                    </constraints>
+                    <state key="normal" title="Биткоин">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOc-gr-wpz" customClass="AnswerButton" customModule="HQTriviaDemo" customModuleProvider="target">
+                    <rect key="frame" x="30" y="417" width="265" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2yo-Al-kJK"/>
+                    </constraints>
+                    <state key="normal" title="Евро">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nTn-79-Rsn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="63A-Ho-xs3"/>
+                <constraint firstItem="zbi-l0-js4" firstAttribute="top" secondItem="zSt-sM-jwa" secondAttribute="bottom" constant="14" id="8X1-qN-bfB"/>
+                <constraint firstItem="zbi-l0-js4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="9um-22-Opz"/>
+                <constraint firstItem="zSt-sM-jwa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="AJx-Dk-FDa"/>
+                <constraint firstAttribute="trailing" secondItem="zSt-sM-jwa" secondAttribute="trailing" constant="30" id="DQx-Uy-s4R"/>
+                <constraint firstItem="vOc-gr-wpz" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-30" id="Lk2-U3-eh3"/>
+                <constraint firstItem="vOc-gr-wpz" firstAttribute="top" secondItem="zbi-l0-js4" secondAttribute="bottom" constant="14" id="Qeo-cT-tyF"/>
+                <constraint firstItem="vOc-gr-wpz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="XDM-ba-JnP"/>
+                <constraint firstAttribute="trailing" secondItem="zbi-l0-js4" secondAttribute="trailing" constant="30" id="drl-3P-Oc3"/>
+                <constraint firstItem="nTn-79-Rsn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="142" id="em1-Qd-Jbc"/>
+                <constraint firstAttribute="trailing" secondItem="vOc-gr-wpz" secondAttribute="trailing" constant="30" id="lfc-B9-bTf"/>
+                <constraint firstItem="zSt-sM-jwa" firstAttribute="top" secondItem="nTn-79-Rsn" secondAttribute="bottom" constant="40" id="qGW-zr-NEx"/>
+                <constraint firstAttribute="trailing" secondItem="nTn-79-Rsn" secondAttribute="trailing" constant="28" id="wRp-N6-8Su"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textLabel" destination="nTn-79-Rsn" id="hcs-V0-IhM"/>
+                <outletCollection property="answerButtons" destination="zSt-sM-jwa" collectionClass="NSMutableArray" id="sks-ln-g35"/>
+                <outletCollection property="answerButtons" destination="zbi-l0-js4" collectionClass="NSMutableArray" id="oeR-LH-9Me"/>
+                <outletCollection property="answerButtons" destination="vOc-gr-wpz" collectionClass="NSMutableArray" id="BJZ-8v-eVZ"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="72.5"/>
+        </view>
+    </objects>
+</document>
